@@ -85,13 +85,13 @@ For learning with 640 resolution images on YOLOv5, images were made into 640 x 6
 
 ### 비디오 해상 조정 (Video resolution adjustment)
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image.png)
+![image](https://github.com/user-attachments/assets/773d49d8-fe86-4f9c-9517-f70ab4e2dcd2)
 
 link:[https://apps.apple.com/us/app/vllo-my-first-video-editor/id952050883](https://apps.apple.com/us/app/vllo-my-first-video-editor/id952050883)
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image%201.png)
+![image](https://github.com/user-attachments/assets/c6c78457-53c4-4eec-a439-d4ca81b3ca15)
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image%202.png)
+![image](https://github.com/user-attachments/assets/28f5bd22-1201-4db0-ae67-433db040abb1)
 
 640 x 640 해상도로 만들어진 영상을 프레임 단위로 이미지로 만들거나 어노테이션을 하기 위해서 Video/Image Labeling and Annotation Tool로 잘 알려진 DarkLabel을 사용했다.
 
@@ -101,51 +101,51 @@ DarkLabel, also known as Video/Image Labeling and Annotation Tool, was used to i
 
 [https://drive.google.com/drive/folders/1JurDKwZfmgUDdV_XLH7gVDldSI-KOUTC?usp=drive_link](https://drive.google.com/drive/folders/1JurDKwZfmgUDdV_XLH7gVDldSI-KOUTC?usp=drive_link)
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image%203.png)
+![image](https://github.com/user-attachments/assets/a7a784a6-e36a-46de-9863-9c26e1cd2bd9)
 
 먼저 Open Video를 통해 640 x 640 해상도 영상을 선택한다. 이후 labeled frames only가 체크 표시를 활성화 한다. 
 
 First, select a 640 x 640 resolution image through Open Video. After that, labeled frames only activates the check mark.
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image%204.png)
+![image](https://github.com/user-attachments/assets/aa9c5bdf-65d4-4255-b58a-4953556b86bf)
 
-먼저 Annotation작업을 하기전에 darklabel.yml을 통해 작업을해야한다.
+그리고 Annotation작업을 하기전에 darklabel.yml을 통해 작업을해야한다.
 
-First, you need to work through darklabel.yml before you can work on Annotation.
+And you need to work through darklabel.yml before working on Annotation.
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image%205.png)
+![image](https://github.com/user-attachments/assets/1b412efb-24a6-45db-bee1-eb81df853d09)
 
 yaml 파일 안에 my_classes2 를 만들고 class명은 “Air purifier”을 추가한다.
 
 Create my_classes2 in the yaml file and add “Air purifier” for the class name.
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image%206.png)
+![image (1)](https://github.com/user-attachments/assets/9f2c1abc-9095-4844-9f62-9fd8ab1689e5)
 
 이제 Annotation할 때 DarkLabel GUI에서 설정한 classes를 볼 수 있게 format9를 새로 생성하고 classes_set은 미리 설정해 놓은 my_classes2를 넣고 GUI에서 볼 name을 Air purifier으로 설정한다.
 
 Now, when announcing, create a new format9 so that you can see the classes set in the DarkLabel GUI, and add a preset my_classes2 for classes_set, and set the name to be viewed in the GUI to Air purifier.
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image%207.png)
+![image (1)](https://github.com/user-attachments/assets/d8f3d390-f91f-463e-bb80-cd1df7ba3642)
 
 DarkLabel 프로그램에 9번째인 Air purifier가 생성이 된 것을 확인할 수 있다
 
 It can be seen that the 9th Air purifier was created in the DarkLabel program
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image%208.png)
+![image (1)](https://github.com/user-attachments/assets/d87b8df8-a06b-4b6d-80e6-3cccfcab6957)
 
 DarkLabel에서 Open Video를 통해 영상을 불러왔던것을 Box + Label로 선택 후 아래 사진과 같이 해당 class에 부합하는 물건에 Annotation을 했다. Annotation이 끝난 후 GT Save As를 통해 labels라는 폴더를 만들고 해당 폴더 안에 저장하고 as Images를 통해 images라는 폴더를 만들고 해당 폴더안에 저장했다.
 
 After selecting Box + Label as the one that had been imported from Dark Label through Open Video, the item that matched the class was notified as shown in the picture below. After the announcement was completed, a folder called labels was created through GT Save As, and then stored in that folder called images was created through as Images and stored in that folder.
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image%209.png)
+![image (1)](https://github.com/user-attachments/assets/e0ed92c6-648f-4b66-bf4e-a0f16c7b01f0)
 
 images폴더와 labels폴더 안에 Annotation한 PNG파일과 txt파일이 있음을 확인할 수 있다.
 
 It can be seen that there are an annotated PNG file and txt file in the images folder and labels folder.
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image%2010.png)
+![image (1)](https://github.com/user-attachments/assets/11220a8a-9827-43bd-a6c0-7c09fd98641e)
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image%2011.png)
+![image (1)](https://github.com/user-attachments/assets/e723f872-0aaa-440a-8e74-5edbcbe3db1c)
 
 ### Air purifier images/labels:
 
@@ -159,9 +159,9 @@ https://drive.google.com/drive/folders/1Ss5jZRuz2dOCYyDxQiiDTtJKWDen85GL?usp=dri
 
 First, I connected the data to Google Drive using Colab provided by Google.
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image%2012.png)
+![image (1)](https://github.com/user-attachments/assets/9204345f-e361-4470-ad5c-6ea1c2773509)
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image%2013.png)
+![image (1)](https://github.com/user-attachments/assets/46b245e7-e351-49bc-9350-7ae621b8a468)
 
 ---
 
@@ -171,7 +171,7 @@ Google Colab 환경에서 YOLOv5 모델을 실행하기 위해 GitHub에서 YOLO
 
 After cloning YOLOv5 from GitHub to run the YOLOv5 model in a Google Colab environment, we installed the required package (requirements.txt). In addition, we set up a learning environment by installing an additional Pillow library (version 10.3) for image processing.
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image%2014.png)
+![image (1)](https://github.com/user-attachments/assets/cf0d913a-b3b8-42ac-aad1-c2a2e2e092f6)
 
 ### **검증 데이터 만들기(Create Verification Data):**
 
@@ -293,39 +293,39 @@ The code was executed to evaluate the detection performance of the trained YOLOv
 !python /content/drive/MyDrive/yolov5/detect.py --weights /content/drive/MyDrive/yolov5/runs/train/exp/weights/best.pt --img 640 --conf 0.1 --source /content/drive/MyDrive/yolov5/Train/images
 ```
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image%2015.png)
+![image (1)](https://github.com/user-attachments/assets/57a098a2-c24c-489f-a4c2-2f158cfaa7bd)
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image%2016.png)
+![image (1)](https://github.com/user-attachments/assets/775f139d-ed73-44dd-8040-b8aa731c9e6d)
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image%2017.png)
+![image (1)](https://github.com/user-attachments/assets/1cd86799-f86e-4150-92b2-5786980d3ae9)
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image%2018.png)
+![image (1)](https://github.com/user-attachments/assets/a521a83c-e91a-43d6-914c-07e2658a708c)
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image%2019.png)
+![image (1)](https://github.com/user-attachments/assets/f6cd1895-f89e-43d8-924d-f6dc080d36c8)
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image%2020.png)
+![image (1)](https://github.com/user-attachments/assets/19b9e096-358f-4a4b-8df7-5a2b78eef9d0)
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image%2021.png)
+![image (1)](https://github.com/user-attachments/assets/ea17a329-9cd2-4144-bfb0-f06b11e8e924)
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image%2022.png)
+![image (1)](https://github.com/user-attachments/assets/98b5f0e1-e3be-4452-abfa-bcac953271b7)
 
-![train_batch0.jpg](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/train_batch0.jpg)
+![train_batch0](https://github.com/user-attachments/assets/8dab3d7f-b07d-416b-9f26-8321c28d4ceb)
 
-![train_batch1.jpg](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/train_batch1.jpg)
+![train_batch1](https://github.com/user-attachments/assets/5478ada4-dc44-45cf-a935-9eda3ad27e51)
 
-![train_batch2.jpg](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/train_batch2.jpg)
+![train_batch2](https://github.com/user-attachments/assets/5783e7f3-cc6e-427f-a0fc-7b055f8af8bb)
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image%2023.png)
+![image (1)](https://github.com/user-attachments/assets/638d9dd6-4359-4cac-8a64-4aa7a58c8e7c)
 
-![image.png](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/image%2024.png)
+![image (1)](https://github.com/user-attachments/assets/71261e45-7fba-48a3-a08d-aa998ccced87)
 
-![labels.jpg](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/labels.jpg)
+![labels](https://github.com/user-attachments/assets/78cf01b1-0138-4196-a375-40a1edc2c7ef)
 
-![e739a2f7-d09c-46a6-9970-5135aa2cc4e5.jpg](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/e739a2f7-d09c-46a6-9970-5135aa2cc4e5.jpg)
+![e739a2f7-d09c-46a6-9970-5135aa2cc4e5](https://github.com/user-attachments/assets/02e5eacd-2e5d-497f-a9bb-8c99952c9bea)
 
-![3c9a40f3-c91b-40d5-a566-5d4b282a19a6.jpg](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/3c9a40f3-c91b-40d5-a566-5d4b282a19a6.jpg)
+![3c9a40f3-c91b-40d5-a566-5d4b282a19a6](https://github.com/user-attachments/assets/d48052a3-3a1c-4622-b2aa-90e780d0a226)
 
-![c9063196-8734-4dea-81b8-234716509002.jpg](Nvidia%20AI%20Specialist%20Certification%2013fabca9fc008098a99eef6b91440d0b/c9063196-8734-4dea-81b8-234716509002.jpg)
+![c9063196-8734-4dea-81b8-234716509002](https://github.com/user-attachments/assets/d72143a4-38c2-4ea6-b0ac-af0e3d37df6a)
 
 학습된 YOLOv5 모델의 탐지 성능을 평가하고, 공기청정기와 관련된 객체를 다양한 각도에서 탐지할 수 있는지 검증하기 위해 Airpurifier,AirTest영상을 입력으로 사용한 코드이며, 그 결과입니다.
 
@@ -370,13 +370,3 @@ https://drive.google.com/drive/folders/1XogKFfQdIBZR6uKEqSeX-gfkOMJZK71R?usp=dri
 Through this project, we were able to implement an air purifier detection and condition monitoring system using YOLOv5 and explore the practical application potential of AI technology in depth. It was a very meaningful time to expand technical understanding and present new possibilities for incorporating AI into air purifiers while directly carrying out the process from data preprocessing to learning and verification.
 
 Finally, thank you for reviewing this report.😊
-
-
----
-layout: post
-title: "Notion으로 글 작성하고 Github io로 글 옮기기"
-subtitle: "[Tips]"
-date: 2020-03-02 17:00
-background: 
-tag: [Tips, Github io, Notion]
----
