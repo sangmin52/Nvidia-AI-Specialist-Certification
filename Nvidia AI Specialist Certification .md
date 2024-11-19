@@ -288,7 +288,7 @@ The code was executed to evaluate the detection performance of the trained YOLOv
 ![c9063196-8734-4dea-81b8-234716509002](https://github.com/user-attachments/assets/d72143a4-38c2-4ea6-b0ac-af0e3d37df6a)
 
 
-This is the code that uses Airpurifier,AirTest images as inputs to evaluate the detection performance of the learned YOLOv5 model and verify that objects related to air purifiers can be detected from various angles.
+This code evaluates the detection performance of the trained YOLOv5 model using AirPurifier and AirTest images as inputs, and verifies that objects related to air purifiers can be detected from various angles. Furthermore, we further utilize test images run on the NVIDIA Jetson Nano to validate the real-time detection performance and applicability of the model in an embedded environment.
 
 ```python
 !python /content/drive/MyDrive/yolov5/detect.py --weights /content/drive/MyDrive/yolov5/runs/train/exp/weights/best.pt --img 640 --conf 0.1 --source /content/drive/MyDrive/AirTest.mp4
@@ -305,6 +305,7 @@ https://drive.google.com/file/d/1UtXmw4cmVDTk-WL-W6pmOjwJN573Qr9V/view?usp=drive
 Verification video
 
 https://drive.google.com/file/d/16u3VbUpRtT3ot1iuFiJN0sTpviL35BrH/view?usp=drive_link
+https://drive.google.com/file/d/1zHUwScDtcu0cp22rhhY7b-6MMVGOyE0J/view?usp=drive_link
 
 the original video
 
@@ -313,6 +314,7 @@ https://drive.google.com/file/d/16ulDWSNdv-jO5Q2lN151Tz6g_dEld4vU/view?usp=drive
 Verification video
 
 https://drive.google.com/file/d/16wzFIfMkHmueKMGWgoSHxeP_tK3fqb51/view?usp=drive_link
+https://drive.google.com/file/d/1GAv1EsXIHiJQ31DcbrCajs34gZxVz6zY/view?usp=drive_link
 
 
 Final Google Drive YOLOv5 file.
